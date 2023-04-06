@@ -1,4 +1,5 @@
 var popup = document.getElementById("popup");
+var closeBtn = document.querySelector(".close-btn");
 
 function openPopup() {
   popup.style.display = "block";
@@ -19,3 +20,5 @@ function adjustPopupPosition() {
 }
 
 window.addEventListener("resize", adjustPopupPosition);
+
+closeBtn.addEventListener("click", closePopup);
