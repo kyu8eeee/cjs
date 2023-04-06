@@ -9,6 +9,8 @@ function closePopup() {
   popup.style.display = "none";
 }
 
+closeBtn.addEventListener("click", closePopup);
+
 function adjustPopupPosition() {
   var windowHeight = window.innerHeight;
   var windowWidth = window.innerWidth;
@@ -20,5 +22,3 @@ function adjustPopupPosition() {
 }
 
 window.addEventListener("resize", adjustPopupPosition);
-
-closeBtn.addEventListener("click", closePopup);
